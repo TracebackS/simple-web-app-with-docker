@@ -1,9 +1,11 @@
 kind: pipline
 name: default
 
-staps:
+steps:
 - name: build
   image: hello
+  command:
+      - echo "hello, world"
   when:
         event:
             - push
