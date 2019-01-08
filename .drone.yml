@@ -6,7 +6,6 @@ staps:
   image: hello
   commands:
   - echo "hello, world"
-
     when:
         event:
             - push
