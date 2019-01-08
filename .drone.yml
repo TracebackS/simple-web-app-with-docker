@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: build
-  image: hello
+  image: thedeepdarkfantasies/friendlyhello
   command:
       - echo "hello, world"
   when:
