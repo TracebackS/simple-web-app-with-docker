@@ -4,9 +4,7 @@ name: default
 staps:
 - name: build
   image: hello
-  commands:
-  - echo "hello, world"
-    when:
+  when:
         event:
             - push
             - pull-request
