@@ -1,12 +1,8 @@
-kind: pipline
-name: default
-
-steps:
-- name: build
-  image: thedeepdarkfantasies/friendlyhello
-  command:
-      - echo "hello, world"
-  when:
-        event:
-            - push
-            - pull-request
+workspace:
+        base: /test
+        path: src/github.com/TracebackS/simple-web-app-with-docker
+    pipeline:
+        build:
+            image: thedeepdarkfantasies/friendlyhello
+            commands:
+                - echo "start build..."
